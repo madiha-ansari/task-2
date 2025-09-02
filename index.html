@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Cards - Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .price {
+      font-size: 24px;
+      color: #0077ff;
+      margin: 15px 0;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    .card ul li {
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .card button {
+      padding: 10px 20px;
+      background: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Basic</h2>
+      <p class="price">$10/month</p>
+      <ul>
+        <li>1 User</li>
+        <li>5GB Storage</li>
+        <li>Email Support</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <h2>Standard</h2>
+      <p class="price">$20/month</p>
+      <ul>
+        <li>5 Users</li>
+        <li>50GB Storage</li>
+        <li>Priority Support</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <h2>Premium</h2>
+      <p class="price">$30/month</p>
+      <ul>
+        <li>Unlimited Users</li>
+        <li>200GB Storage</li>
+        <li>24/7 Support</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
